@@ -1,0 +1,33 @@
+
+2023-01-31 17:55:22.409079: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64
+2023-01-31 17:55:22.409358: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2023-01-31 17:55:22.409394: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (c-3-13): /proc/driver/nvidia/version does not exist
+2023-01-31 17:55:22.409615: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2023-01-31 17:55:22.428565: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2497055000 Hz
+2023-01-31 17:55:22.428681: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555559175f90 executing computations on platform Host. Devices:
+2023-01-31 17:55:22.428694: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2023-01-31 17:56:54.555915: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 3221225472 exceeds 10% of system memory.
+2023-01-31 17:56:55.662368: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 4831838208 exceeds 10% of system memory.
+2023-01-31 18:01:27.867847: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2147483648 exceeds 10% of system memory.
+2023-01-31 18:05:26.009289: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 3221225472 exceeds 10% of system memory.
+2023-01-31 18:05:27.121953: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 4831838208 exceeds 10% of system memory.
+Using TensorFlow backend.
+
+SynthSeg-robust 2.0
+
+using 1 thread
+predicting 1/1
+
+segmentation  saved in:    /mnt/isilon/bgdlab_resnas03/Data/16p/derivatives/synthseg+/sub-14752/ses-0007/sub-14752_ses-0007_acq-VARIANTEchoTimeRepetitionTimeObliquity_run-0002_T1w/sub-14752_ses-0007_acq-VARIANTEchoTimeRepetitionTimeObliquity_run-0002_T1w_synthseg.nii.gz
+posteriors saved in:       /mnt/isilon/bgdlab_resnas03/Data/16p/derivatives/synthseg+/sub-14752/ses-0007/sub-14752_ses-0007_acq-VARIANTEchoTimeRepetitionTimeObliquity_run-0002_T1w/posterior_probability_maps.nii.gz
+volumes saved in:          /mnt/isilon/bgdlab_resnas03/Data/16p/derivatives/synthseg+/sub-14752/ses-0007/sub-14752_ses-0007_acq-VARIANTEchoTimeRepetitionTimeObliquity_run-0002_T1w/volumes.csv
+QC scores saved in:        /mnt/isilon/bgdlab_resnas03/Data/16p/derivatives/synthseg+/sub-14752/ses-0007/sub-14752_ses-0007_acq-VARIANTEchoTimeRepetitionTimeObliquity_run-0002_T1w/qc_scores.csv
+
+If you use the new robust version of SynthSeg in a publication, please cite:
+Robust Segmentation of Brain MRI in the Wild with Hierarchical CNNs and no Retraining
+B. Billot, M. Collin, S.E. Arnold, S. Das, J.E. Iglesias
+
+real	14m50.599s
+user	14m22.146s
+sys	0m19.995s
+Job finished running!
